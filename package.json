@@ -1,0 +1,35 @@
+{
+  "name": "shop-be",
+  "version": "1.0.0",
+  "description": "AmazeShop BE",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon shop-be/server",
+    "client": "npm start --prefix shop-fe",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seeder": "node shop-be/seeder",
+    "destroy": "node shop-be/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajat-arora084/amaze-shop-mern.git"
+  },
+  "author": "arora.rajat084",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajat-arora084/amaze-shop-mern/issues"
+  },
+  "homepage": "https://github.com/rajat-arora084/amaze-shop-mern#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^7.0.0",
+    "dotenv": "^12.0.4",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15"
+  }
+}
